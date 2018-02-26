@@ -8,23 +8,22 @@ import (
 
 func main () {
     
-    fmt.Println("Iterating through all JSON files")
+ //   fmt.Println(len(os.Args), os.Args)
 
-    files := [2]string{"../DnD_5e/example_json/equipment_test.json", "../DnD_5e/example_json/spell_test.json"}
-
-    for _, element := range files {
-        var data DnD_5e.Data
-
-        fmt.Printf ("Opening %s\n",element)
-        if data.Load_json_file(element) < 0 {
-            os.Exit(1)
+    for i, file_name := range os.Args {
+        if i == 0 {
+            continue
         }
-
+        fmt.Printf("Opening %s\n",file_name)
+        var data DnD_5e.Data
+        if data.Load_json_file(file_name) < 0 {
+            fmt.Println("Could not open file.\n")
+            continue
+        } 
         data.Print_rules()
         data.Print_gear()
         data.Print_armor()
         data.Print_weapons()
         data.Print_spells()
-    }
-    
+    }    
 }
