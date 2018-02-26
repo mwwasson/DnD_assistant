@@ -10,7 +10,7 @@ func main () {
     
     fmt.Println("Iterating through all JSON files")
 
-    files := [2]string{"./example/equipment_test.json", "./example/spell_test.json"}
+    files := [2]string{"../DnD_5e/example_json/equipment_test.json", "../DnD_5e/example_json/spell_test.json"}
 
     for _, element := range files {
         var data DnD_5e.Data
