@@ -1,0 +1,72 @@
+{
+    "armor":[
+        {
+            "type": "Light",
+            "name": "Padded",
+            "cost_gp": 5,
+            "ac" : "11 + Dex modifier - Disadvantage",
+            "str" : 0,
+            "stealth" : "-",
+            "weight" : 8
+        },{
+            "type": "Light",
+            "name": "Leather",
+            "cost_gp": 10,
+            "ac" : "11 + Dex modifier",
+            "str" : 0,
+            "stealth" : "-",
+            "weight" : 10
+        },{
+            "type": "Heavy",
+            "name": "Plate",
+            "cost_gp": 1500,
+            "ac" : "18",
+            "str" : 15,
+            "stealth" : "Disadvantage",
+            "weight" : 65
+        }],
+
+        "weapon":[
+        {
+            "type": "Simple Melee",
+            "name": "Club",
+            "cost_gp": 0.1,
+            "damage" : "1d4 bludgeoning",
+            "weight" : 2,
+            "properties" : "Light"
+        },{
+            "type": "Simple Melee",
+            "name": "Dagger",
+            "cost_gp": 2,
+            "damage" : "1d4 piercing",
+            "weight" : 1,
+            "properties" : "Finesse, light, thrown (range 20/60)"
+        },{
+            "type": "Martial Ranged",
+            "name": "Net",
+            "cost_gp": 1,
+            "damage" : "-",
+            "weight" : 3,
+            "properties" : "Special, thrown (range 5/15)",
+            "description" : "A Large or smaller creature hit by a net is Restrained until it is freed. A net has no effect on creatures that are formless, or creatures that are Huge or larger. A creature can use its action to make a DC 10 Strength check, freeing itself or another creature within its reach on a success. Dealing 5 slashing damage to the net (AC 10) also frees the creature without harming it, ending the effect and destroying the net. When you use an action, bonus action, or reaction to attack with a net, you can make only one attack regardless of the number of attacks you can normally make."
+        }], 
+ 
+
+    "adventuring_gear":[
+        {
+            "item": "Abacus",
+            "cost_gp": 2,
+            "weight": 2,
+            "description":""
+        },{
+            "item": "Acid (vial)",
+            "cost_gp": 25,
+            "weight": 1,
+            "description":"As an action, you can splash the contents of this vial onto a creature within 5 feet of you or throw the vial up to 20 feet, shattering it on impact. In either case, make a ranged attack against a creature or object, treating the acid as an improvised weapon. On a hit, the target takes 2d6 acid damage."
+        },{
+            "item": "Sack",
+            "cost_gp": 0.01,
+            "weight": 0.5,
+            "description":""
+        }]
+}
