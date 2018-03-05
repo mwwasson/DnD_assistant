@@ -3,6 +3,7 @@ package main
 import (
     "os"
     "fmt"
+    "github.com/mwwasson/DnD_assistant/DnD5e"
 )
 
 func main () {
@@ -14,7 +15,7 @@ func main () {
             continue
         }
         fmt.Printf("Opening %s\n",file_name)
-        var data Data
+        var data DnD5e.Data
         if data.Load_json_file(file_name) < 0 {
             fmt.Println("Could not open file.\n")
             continue
